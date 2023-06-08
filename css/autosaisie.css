@@ -1,0 +1,26 @@
+@keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  @keyframes deleting {
+    to {
+      width: 0;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  #cursor {
+    display: inline-block;
+    margin-left: 2px;
+    animation: blink 1s infinite;
+    color: #fff;
+    border: solid 2px #fff;
+    height: 30px;
+  }
