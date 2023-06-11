@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+    .masthead .container .action{ 
+        flex-direction: column;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .card {
+        padding: 1.5em;
+        transition: .2s;
+    }
+
+
+}
