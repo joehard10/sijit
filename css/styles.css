@@ -11511,6 +11511,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 section {
   z-index: 10;
+  margin-top: 40px;
 }
 
 
@@ -11695,15 +11696,155 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 4px black;
+  /* border: solid 4px black; */
   justify-content: center;
-  background-color: grey;
+  background-color: var(--custom-primary-color);
   z-index: 10;
+  padding: 100px 0 0;
+}
 
-  padding: 45px 0 0;
+.footer_top {
+  width: 100%;
+}
+
+.footer_top ul {
+  list-style-type: none;
+}
+
+.footer_top ul li {
+  display: flex;
+  align-items: center;
+}
+
+.footer_top ul li a {
+  text-decoration: none;
+}
+
+
+
+.footer_top ul li a, .footer_top ul svg {
+  color: #fff;
+}
+
+.footer_top ul li p {
+  text-align: left;
+  margin-left: 15px;
+  color: #fff;
+}
+
+.footer_top ul svg {
+  font-size: 20px;
 }
 
 .footer p {
   flex: 1;
   height: 100%;
 }
+
+.widget_links {
+  padding-top: 15px;
+}
+
+.widget_links li  {
+  margin: 0 0 10px;
+}
+
+.widget_links li > a {
+  color: #f7f7f7!important;
+  /* padding: 15px 0; */
+}
+
+.footer_bottom {
+  width: 100%;
+  background-color: #1a1919;
+  color: #fff;
+}
+
+/* STYLE FOR SOCIAL FOOTER NETWORK */.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  /* background: #fff; */
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #fff;
+}
+
+/* END STYLE FOR FOOTER SOCIAL NETWORK */
+
